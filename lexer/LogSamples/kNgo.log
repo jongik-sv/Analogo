@@ -1,0 +1,114 @@
+[2021-12-23 11:36:42,098][DEBUG][kNgo][org.springframework.web.servlet.DispatcherServlet(108)]-POST "/pmf/service/mo?moNo=M000164&weight=12300&action=add", parameters={masked}
+[2021-12-23 11:36:42,099][DEBUG][kNgo][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping(522)]-Mapped to com.dongkuk.dmes.cr.frm.inbound.ServiceController#service(String, Map, String, String)
+[2021-12-23 11:36:42,099][DEBUG][kNgo][org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor(108)]-Read "application/octet-stream" to []
+[2021-12-23 11:36:42,100][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(370)]-Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAndFlush]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2021-12-23 11:36:42,100][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(412)]-Opened new EntityManager [SessionImpl(1113629094<open>)] for JPA transaction
+[2021-12-23 11:36:42,100][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(53)]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2021-12-23 11:36:42,100][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(81)]-begin
+[2021-12-23 11:36:42,102][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(440)]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@4ca7579a]
+[2021-12-23 11:36:42,102][DEBUG][kNgo][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-23 11:36:42,104][DEBUG][kNgo][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-23 11:36:42,108][DEBUG][kNgo][org.hibernate.event.internal.AbstractSaveEventListener(128)]-Generated identifier: 3, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+[2021-12-23 11:36:42,109][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(140)]-Processing flush-time cascades
+[2021-12-23 11:36:42,109][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(193)]-Dirty checking collections
+[2021-12-23 11:36:42,109][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(114)]-Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+[2021-12-23 11:36:42,110][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(121)]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[2021-12-23 11:36:42,110][DEBUG][kNgo][org.hibernate.internal.util.EntityPrinter(110)]-Listing entities:
+[2021-12-23 11:36:42,110][DEBUG][kNgo][org.hibernate.internal.util.EntityPrinter(117)]-com.dongkuk.dmes.cr.frm.access.log.RequestLog{id=3, content=payload:[null]}
+[2021-12-23 11:36:42,110][DEBUG][kNgo][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-23 11:36:42,110][TRACE][kNgo][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-23 11:36:42,110][TRACE][kNgo][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [3]
+[2021-12-23 11:36:42,112][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(740)]-Initiating transaction commit
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(557)]-Committing JPA transaction on EntityManager [SessionImpl(1113629094<open>)]
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(98)]-committing
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(140)]-Processing flush-time cascades
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(193)]-Dirty checking collections
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(114)]-Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.event.internal.AbstractFlushingEventListener(121)]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[2021-12-23 11:36:42,113][DEBUG][kNgo][org.hibernate.internal.util.EntityPrinter(110)]-Listing entities:
+[2021-12-23 11:36:42,114][DEBUG][kNgo][org.hibernate.internal.util.EntityPrinter(117)]-com.dongkuk.dmes.cr.frm.access.log.RequestLog{id=3, content=payload:[null]}
+[2021-12-23 11:36:42,116][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(648)]-Closing JPA EntityManager [SessionImpl(1113629094<open>)] after transaction
+[2021-12-23 11:36:42,116][DEBUG][kNgo][org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl(170)]-HHH000420: Closing un-released batch
+[2021-12-23 11:36:42,117][INFO ][kNgo][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [mo] start. Request Tag [8HG]
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_09fiov0
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_0esc4cw
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_0591vg1
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : StartEvent_1
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_1obyfx7
+[2021-12-23 11:36:42,130][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_0vwtv6v
+[2021-12-23 11:36:42,131][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_0qep0bz
+[2021-12-23 11:36:42,131][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_00ycx5n
+[2021-12-23 11:36:42,131][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_10vkttk
+[2021-12-23 11:36:42,131][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_1k6inig
+[2021-12-23 11:36:42,131][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Gateway_1xtcgie
+[2021-12-23 11:36:42,132][DEBUG][kNgo][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder(57)]-Check element flows : Activity_0qmwmaj
+[2021-12-23 11:36:42,136][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(370)]-Creating new transaction with name [txBiz]: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED
+[2021-12-23 11:36:42,136][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(412)]-Opened new EntityManager [SessionImpl(1746923045<open>)] for JPA transaction
+[2021-12-23 11:36:42,136][DEBUG][kNgo][org.springframework.jdbc.datasource.DataSourceUtils(209)]-Changing isolation level of JDBC Connection [HikariProxyConnection@147615978 wrapping com.mysql.cj.jdbc.ConnectionImpl@37ffe4f3] to 2
+[2021-12-23 11:36:42,141][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(53)]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2021-12-23 11:36:42,141][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(81)]-begin
+[2021-12-23 11:36:42,143][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(440)]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7b7ee437]
+[2021-12-23 11:36:42,143][INFO ][kNgo][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-23 11:36:42,144][INFO ][kNgo][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-23 11:36:42,144][INFO ][kNgo][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-23 11:36:42,144][INFO ][kNgo][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-23 11:36:42,144][INFO ][kNgo][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-23 11:36:42,145][INFO ][kNgo][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-23 11:36:42,145][INFO ][kNgo][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0qep0bz](MO등록) start.
+[2021-12-23 11:36:42,146][INFO ][kNgo][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMo]
+[2021-12-23 11:36:42,148][DEBUG][kNgo][io.github.thecodinglog.methodinvoker.ParameterTypeMethodArgumentBindingStrategy(35)]-Type binding of interface com.dongkuk.dmes.cr.biz.plan.mo.MoRepository
+[2021-12-23 11:36:42,149][DEBUG][kNgo][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of moNo
+[2021-12-23 11:36:42,179][DEBUG][kNgo][io.github.thecodinglog.methodinvoker.ParameterNameAndJsonMethodArgumentBindingStrategy(45)]-Parameter name json binding of weight
+[2021-12-23 11:36:42,199][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Creating a new SqlSession
+[2021-12-23 11:36:42,208][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a967194]
+[2021-12-23 11:36:42,210][INFO ][kNgo][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(37)]-Mybatis SQL : 
+/* com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMo */
+insert into biz.mo_hea(mo_no, weight)
+        values (?, ?)
+[2021-12-23 11:36:42,210][INFO ][kNgo][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [0] as [java.lang.String] - [M000164]
+[2021-12-23 11:36:42,210][INFO ][kNgo][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [1] as [java.lang.Integer] - [12300]
+[2021-12-23 11:36:42,217][DEBUG][kNgo][org.mybatis.spring.transaction.SpringManagedTransaction(49)]-JDBC Connection [HikariProxyConnection@147615978 wrapping com.mysql.cj.jdbc.ConnectionImpl@37ffe4f3] will be managed by Spring
+[2021-12-23 11:36:42,221][DEBUG][kNgo][com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMo(137)]-==>  Preparing: insert into biz.mo_hea(mo_no, weight) values (?, ?)
+[2021-12-23 11:36:42,233][DEBUG][kNgo][com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMo(137)]-==> Parameters: M000164(String), 12300(Integer)
+[2021-12-23 11:36:42,238][DEBUG][kNgo][com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMo(137)]-<==    Updates: 1
+[2021-12-23 11:36:42,238][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a967194]
+[2021-12-23 11:36:42,239][INFO ][kNgo][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0qep0bz](MO등록) finish.(93ms)
+[2021-12-23 11:36:42,239][INFO ][kNgo][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_1k6inig](MO 조회) start.
+[2021-12-23 11:36:42,253][DEBUG][kNgo][org.springframework.jdbc.core.JdbcTemplate(711)]-Executing prepared SQL query
+[2021-12-23 11:36:42,254][DEBUG][kNgo][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select mo_no, weight from mo_hea where mo_no = ?]
+[2021-12-23 11:36:42,255][TRACE][kNgo][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000164], value class [java.lang.String], SQL type unknown
+[2021-12-23 11:36:42,266][DEBUG][kNgo][com.dongkuk.oasis.executors.SqlScriptTaskExecutable(87)]-1 row(s) selected.
+[2021-12-23 11:36:42,267][INFO ][kNgo][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_1k6inig](MO 조회) finish.(27ms)
+[2021-12-23 11:36:42,268][INFO ][kNgo][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-23 11:36:42,268][INFO ][kNgo][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-23 11:36:42,268][INFO ][kNgo][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(124ms)
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a967194]
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a967194]
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.mybatis.spring.SqlSessionUtils(49)]-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a967194]
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(740)]-Initiating transaction commit
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(557)]-Committing JPA transaction on EntityManager [SessionImpl(1746923045<open>)]
+[2021-12-23 11:36:42,269][DEBUG][kNgo][org.hibernate.engine.transaction.internal.TransactionImpl(98)]-committing
+[2021-12-23 11:36:42,271][DEBUG][kNgo][org.springframework.jdbc.datasource.DataSourceUtils(242)]-Resetting isolation level of JDBC Connection [HikariProxyConnection@147615978 wrapping com.mysql.cj.jdbc.ConnectionImpl@37ffe4f3] to 4
+[2021-12-23 11:36:42,273][DEBUG][kNgo][org.springframework.orm.jpa.JpaTransactionManager(648)]-Closing JPA EntityManager [SessionImpl(1746923045<open>)] after transaction
+[2021-12-23 11:36:42,273][INFO ][kNgo][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-23 11:36:42,273][INFO ][kNgo][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(156ms)
+[2021-12-23 11:36:42,274][DEBUG][kNgo][org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor(268)]-Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[2021-12-23 11:36:42,274][DEBUG][kNgo][org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor(108)]-Writing [{mos=TypedObject{object=[{mo_no=M000164, weight=12300}], type=java.util.List<java.util.Map<java.lang (truncated)...]
+[2021-12-23 11:36:42,293][DEBUG][kNgo][org.springframework.web.servlet.DispatcherServlet(1131)]-Completed 200 OK

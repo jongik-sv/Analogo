@@ -1,0 +1,277 @@
+// 소트 안함         
+         
+         SERVICE_START  [2021-12-23 11:39:39,083][INFO ][mERe][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [parallelGreeting] start. Request Tag [L8w]
+                     X  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+         PROCESS_START  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+            TASK_START  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+              TASK_END  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+            TASK_START  [2021-12-23 11:39:39,119][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+              TASK_END  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(2ms)
+            TASK_START  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+  PL_SUB_PROCESS_START  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_0qw4j58]
+            TASK_START  [2021-12-23 11:39:39,124][INFO ][mERe:XGOC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,126][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,127][INFO ][mERe:yVMq][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1msngyv](인사1 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,127][INFO ][mERe:XGOC][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+              TASK_END  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,128][INFO ][mERe:yVMq][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+              TASK_END  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+                     X  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(1ms)
+           PROCESS_END  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1msngyv](인사1 프로세스) finish.(1ms)
+            TASK_START  [2021-12-23 11:39:39,129][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+  PL_SUB_PROCESS_START  [2021-12-23 11:39:39,130][INFO ][mERe:XGOC][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_111cvzu]
+              TASK_END  [2021-12-23 11:39:39,130][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(4ms)
+            TASK_START  [2021-12-23 11:39:39,130][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,131][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,131][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,132][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                     X  [2021-12-23 11:39:39,134][INFO ][mERe:XGOC:i9F7][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(3ms)
+           PROCESS_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(4ms)
+              TASK_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(4ms)
+            TASK_START  [2021-12-23 11:39:39,134][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,138][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                     X  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(1ms)
+              TASK_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(1ms)
+    PL_SUB_PROCESS_END  [2021-12-23 11:39:39,141][INFO ][mERe:XGOC][com.dongkuk.oasis.executors.ParallelGatewayExecutable(91)]-Parallel Sub-process run finish. [Gateway_111cvzu]
+              TASK_END  [2021-12-23 11:39:39,143][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(12ms)
+            TASK_START  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+              TASK_END  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(17ms)
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe:XGOC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(20ms)
+    PL_SUB_PROCESS_END  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.executors.ParallelGatewayExecutable(91)]-Parallel Sub-process run finish. [Gateway_0qw4j58]
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(23ms)
+            TASK_START  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,147][INFO ][mERe][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(28ms)
+                     X  [2021-12-23 11:39:39,155][INFO ][mERe][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+           SERVICE_END  [2021-12-23 11:39:39,156][INFO ][mERe][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [parallelGreeting] finish.(72ms)
+ 
+// 소트
+         SERVICE_START  [2021-12-23 11:39:39,083][INFO ][mERe][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [parallelGreeting] start. Request Tag [L8w]
+                     X  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+         PROCESS_START  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+            TASK_START  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+              TASK_END  [2021-12-23 11:39:39,118][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+            TASK_START  [2021-12-23 11:39:39,119][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+              TASK_END  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(2ms)
+            TASK_START  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+        PL_SUB_PROCESS  [2021-12-23 11:39:39,122][INFO ][mERe][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_0qw4j58]
+            TASK_START  [2021-12-23 11:39:39,124][INFO ][mERe:XGOC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,127][INFO ][mERe:XGOC][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+              TASK_END  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+              TASK_END  [2021-12-23 11:39:39,128][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+            TASK_START  [2021-12-23 11:39:39,129][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+        PL_SUB_PROCESS  [2021-12-23 11:39:39,130][INFO ][mERe:XGOC][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_111cvzu]
+            TASK_START  [2021-12-23 11:39:39,130][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,131][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,131][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,132][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                     X  [2021-12-23 11:39:39,134][INFO ][mERe:XGOC:i9F7][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(3ms)
+           PROCESS_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(4ms)
+              TASK_END  [2021-12-23 11:39:39,135][INFO ][mERe:XGOC:i9F7][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(4ms)
+            TASK_START  [2021-12-23 11:39:39,134][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,138][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                     X  [2021-12-23 11:39:39,139][INFO ][mERe:XGOC:QjdC][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(1ms)
+              TASK_END  [2021-12-23 11:39:39,140][INFO ][mERe:XGOC:QjdC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(1ms)
+              TASK_END  [2021-12-23 11:39:39,143][INFO ][mERe:XGOC][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(12ms)
+            TASK_START  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+              TASK_END  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,145][INFO ][mERe:XGOC][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(17ms)
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe:XGOC][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(20ms)
+            TASK_START  [2021-12-23 11:39:39,126][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+         PROCESS_START  [2021-12-23 11:39:39,127][INFO ][mERe:yVMq][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1msngyv](인사1 프로세스) start.
+            TASK_START  [2021-12-23 11:39:39,128][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+   TASK_INVOKING_CLASS  [2021-12-23 11:39:39,128][INFO ][mERe:yVMq][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                     X  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+              TASK_END  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(1ms)
+           PROCESS_END  [2021-12-23 11:39:39,129][INFO ][mERe:yVMq][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1msngyv](인사1 프로세스) finish.(1ms)
+              TASK_END  [2021-12-23 11:39:39,130][INFO ][mERe:yVMq][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(4ms)
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(23ms)
+            TASK_START  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+              TASK_END  [2021-12-23 11:39:39,146][INFO ][mERe][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+           PROCESS_END  [2021-12-23 11:39:39,147][INFO ][mERe][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(28ms)
+                     X  [2021-12-23 11:39:39,155][INFO ][mERe][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+           SERVICE_END  [2021-12-23 11:39:39,156][INFO ][mERe][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [parallelGreeting] finish.(72ms)
+ 
+
+
+
+
+
+
+SERVICE_START            [2021-12-23 11:36:43,095][INFO ][hgch][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [mo] start. Request Tag [ZQQ]
+X                        [2021-12-23 11:36:43,108][INFO ][hgch][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+PROCESS_START            [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+TASK_END                 [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+TASK_END                 [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.activity.SubServiceCallTask(24)]-Task [Activity_1obyfx7](parallelGreeting) start.
+SUBSERV_START            [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.executors.SubServiceCallTaskExecutable(68)]-Sub-service [parallelGreeting] start.
+PROCESS_START            [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+TASK_START               [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+TASK_END                 [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+TASK_END                 [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,117][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+PL_SUB_PROCESS           [2021-12-23 11:36:43,117][INFO ][hgch][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_0qw4j58]
+TASK_START               [2021-12-23 11:36:43,125][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+PROCESS_START            [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+TASK_END                 [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+TASK_END                 [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+PL_SUB_PROCESS           [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_111cvzu]
+PROCESS_START            [2021-12-23 11:36:43,128][INFO ][hgch:rN5f][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1msngyv](인사1 프로세스) start.
+TASK_START               [2021-12-23 11:36:43,129][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+TASK_INVOKING_CLASS      [2021-12-23 11:36:43,129][INFO ][hgch:rN5f][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+X                        [2021-12-23 11:36:43,130][DEBUG][hgch:rN5f][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+X                        [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+TASK_END                 [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(0ms)
+PROCESS_END              [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1msngyv](인사1 프로세스) finish.(1ms)
+TASK_END                 [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(5ms)
+TASK_START               [2021-12-23 11:36:43,136][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+PROCESS_START            [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+PROCESS_START            [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+TASK_INVOKING_CLASS      [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+X                        [2021-12-23 11:36:43,139][DEBUG][hgch:XB0c:X6Px][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+X                        [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+TASK_END                 [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(0ms)
+PROCESS_END              [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(1ms)
+TASK_END                 [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(1ms)
+TASK_INVOKING_CLASS      [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+X                        [2021-12-23 11:36:43,144][DEBUG][hgch:XB0c:Ba1e][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+X                        [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+TASK_END                 [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(6ms)
+PROCESS_END              [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(6ms)
+TASK_END                 [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(7ms)
+PL_SUB_PROCESS           [2021-12-23 11:36:43,151][INFO ][hgch:XB0c][com.dongkuk.oasis.executors.ParallelGatewayExecutable(91)]-Parallel Sub-process run finish. [Gateway_111cvzu]
+TASK_END                 [2021-12-23 11:36:43,155][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(26ms)
+TASK_START               [2021-12-23 11:36:43,155][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+TASK_END                 [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+PROCESS_END              [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(27ms)
+TASK_END                 [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(27ms)
+PL_SUB_PROCESS           [2021-12-23 11:36:43,158][INFO ][hgch][com.dongkuk.oasis.executors.ParallelGatewayExecutable(91)]-Parallel Sub-process run finish. [Gateway_0qw4j58]
+TASK_END                 [2021-12-23 11:36:43,158][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(41ms)
+TASK_START               [2021-12-23 11:36:43,170][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+TASK_END                 [2021-12-23 11:36:43,170][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+PROCESS_END              [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(54ms)
+SUBSERV_END              [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.executors.SubServiceCallTaskExecutable(72)]-Sub-service [parallelGreeting] finish.
+TASK_END                 [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.model.activity.SubServiceCallTask(31)]-Task [Activity_1obyfx7](parallelGreeting) finish.(61ms)
+TASK_START               [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_0591vg1](MO 조회) start.
+SQL                      [2021-12-23 11:36:43,172][DEBUG][hgch][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select /* sample */mo_no, weight from mo_hea where mo_no = ?]
+PARAMETER                [2021-12-23 11:36:43,172][TRACE][hgch][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000164], value class [java.lang.String], SQL type unknown
+X                        [2021-12-23 11:36:43,176][DEBUG][hgch][com.dongkuk.oasis.executors.SqlScriptTaskExecutable(87)]-1 row(s) selected.
+TASK_END                 [2021-12-23 11:36:43,176][INFO ][hgch][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_0591vg1](MO 조회) finish.(5ms)
+TASK_START               [2021-12-23 11:36:43,177][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_19hiwi1](Event_19hiwi1) start.
+TASK_END                 [2021-12-23 11:36:43,177][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_19hiwi1](Event_19hiwi1) finish.(0ms)
+PROCESS_END              [2021-12-23 11:36:43,177][INFO ][hgch][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(68ms)
+X                        [2021-12-23 11:36:43,181][INFO ][hgch][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+SERVICE_END              [2021-12-23 11:36:43,181][INFO ][hgch][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(85ms)
+X                        [2021-12-23 11:36:43,181][DEBUG][hgch][org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor(268)]-Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+X                        [2021-12-23 11:36:43,181][DEBUG][hgch][org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor(108)]-Writing [{mos=TypedObject{object=[{mo_no=M000164, weight=12300}], type=java.util.List<java.util.Map<java.lang (truncated)...]
+X                        [2021-12-23 11:36:43,182][DEBUG][hgch][org.springframework.web.servlet.DispatcherServlet(1131)]-Completed 200 OK
+
+
+
+
+SERVICE_START            [2021-12-23 11:36:43,095][INFO ][hgch][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [mo] start. Request Tag [ZQQ]
+   X                        [2021-12-23 11:36:43,108][INFO ][hgch][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+   TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+   TASK_END                 [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+
+   TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+   TASK_END                 [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+
+   TASK_START               [2021-12-23 11:36:43,109][INFO ][hgch][com.dongkuk.oasis.model.activity.SubServiceCallTask(24)]-Task [Activity_1obyfx7](parallelGreeting) start.
+      SUBSERV_START            [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.executors.SubServiceCallTaskExecutable(68)]-Sub-service [parallelGreeting] start.
+         TASK_START               [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+         TASK_END                 [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+
+         TASK_START               [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+         TASK_END                 [2021-12-23 11:36:43,116][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(0ms)
+
+         TASK_START               [2021-12-23 11:36:43,117][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+            PL_SUB_PROCESS          [2021-12-23 11:36:43,117][INFO ][hgch][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_0qw4j58]
+            TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+               PROCESS_START            [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+                  TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+                  TASK_END                 [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+
+                  TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+                  TASK_END                 [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+
+                  TASK_START               [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+                     PL_SUB_PROCESS           [2021-12-23 11:36:43,128][INFO ][hgch:XB0c][com.dongkuk.oasis.executors.ParallelGatewayExecutable(71)]-Parallel Sub-process run start. [Gateway_111cvzu]
+                        TASK_START               [2021-12-23 11:36:43,136][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+                           PROCESS_START            [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+                              TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+                                 TASK_INVOKING_CLASS      [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                                 X                        [2021-12-23 11:36:43,139][DEBUG][hgch:XB0c:X6Px][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+                                 X                        [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+                              TASK_END                 [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(0ms)
+                           PROCESS_END              [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(1ms)
+                        TASK_END                 [2021-12-23 11:36:43,139][INFO ][hgch:XB0c:X6Px][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(1ms)
+
+                        TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+                           PROCESS_START            [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+                              TASK_START               [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+                                 TASK_INVOKING_CLASS      [2021-12-23 11:36:43,138][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                                 X                        [2021-12-23 11:36:43,144][DEBUG][hgch:XB0c:Ba1e][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+                                 X                        [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+                              TASK_END                 [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(6ms)
+                           PROCESS_END              [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(6ms)
+                        TASK_END                 [2021-12-23 11:36:43,145][INFO ][hgch:XB0c:Ba1e][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(7ms)
+                     PL_SUB_PROCESS           [2021-12-23 11:36:43,151][INFO ][hgch:XB0c][com.dongkuk.oasis.executors.ParallelGatewayExecutable(91)]-Parallel Sub-process run finish. [Gateway_111cvzu]
+                  TASK_END                 [2021-12-23 11:36:43,155][INFO ][hgch:XB0c][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(26ms)
+
+                  TASK_START               [2021-12-23 11:36:43,155][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+                  TASK_END                 [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+
+               PROCESS_END              [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(27ms)
+            TASK_END                 [2021-12-23 11:36:43,156][INFO ][hgch:XB0c][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(27ms)
+
+            TASK_START               [2021-12-23 11:36:43,125][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+               TASK_START               [2021-12-23 11:36:43,129][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+                  TASK_INVOKING_CLASS      [2021-12-23 11:36:43,129][INFO ][hgch:rN5f][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(72)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+                  X                        [2021-12-23 11:36:43,130][DEBUG][hgch:rN5f][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy(31)]-Parameter name binding of name
+                  X                        [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+               TASK_END                 [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(0ms)
+            TASK_END                 [2021-12-23 11:36:43,130][INFO ][hgch:rN5f][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(5ms)
+         TASK_END                 [2021-12-23 11:36:43,158][INFO ][hgch][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(41ms)
+
+         TASK_START               [2021-12-23 11:36:43,170][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+         TASK_END                 [2021-12-23 11:36:43,170][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+      SUBSERV_END              [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.executors.SubServiceCallTaskExecutable(72)]-Sub-service [parallelGreeting] finish.
+   TASK_END                 [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.model.activity.SubServiceCallTask(31)]-Task [Activity_1obyfx7](parallelGreeting) finish.(61ms)
+
+   TASK_START               [2021-12-23 11:36:43,171][INFO ][hgch][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_0591vg1](MO 조회) start.
+      SQL                      [2021-12-23 11:36:43,172][DEBUG][hgch][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select /* sample */mo_no, weight from mo_hea where mo_no = ?]
+      PARAMETER                [2021-12-23 11:36:43,172][TRACE][hgch][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000164], value class [java.lang.String], SQL type unknown
+      X                        [2021-12-23 11:36:43,176][DEBUG][hgch][com.dongkuk.oasis.executors.SqlScriptTaskExecutable(87)]-1 row(s) selected.
+   TASK_END                 [2021-12-23 11:36:43,176][INFO ][hgch][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_0591vg1](MO 조회) finish.(5ms)
+
+   TASK_START               [2021-12-23 11:36:43,177][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_19hiwi1](Event_19hiwi1) start.
+   TASK_END                 [2021-12-23 11:36:43,177][INFO ][hgch][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_19hiwi1](Event_19hiwi1) finish.(0ms)
+SERVICE_END              [2021-12-23 11:36:43,181][INFO ][hgch][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(85ms)

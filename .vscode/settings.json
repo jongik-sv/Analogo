@@ -1,0 +1,9 @@
+{
+    "go.inferGopath": false,
+    "go.generateTestsFlags": [
+
+    ],
+    "go.testFlags": [
+        "-v"
+    ]
+}

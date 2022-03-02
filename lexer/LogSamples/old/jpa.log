@@ -1,0 +1,183 @@
+[2021-12-10 18:16:20,125][INFO ][yNfr][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] start.
+    [2021-12-10 18:16:20,163][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_09fiov0
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0esc4cw
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : StartEvent_1
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0vwtv6v
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0qep0bz
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_1k6inig
+    [2021-12-10 18:16:20,164][DEBUG][yNfr][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Gateway_1xtcgie
+    [2021-12-10 18:16:20,176][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Creating new transaction with name [txBiz]: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED
+    [2021-12-10 18:16:20,176][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Opened new EntityManager [SessionImpl(403425514<open>)] for JPA transaction
+    [2021-12-10 18:16:20,178][DEBUG][yNfr][org.springframework.jdbc.datasource.DataSourceUtils]-Changing isolation level of JDBC Connection [HikariProxyConnection@1696024568 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 2
+    [2021-12-10 18:16:20,184][DEBUG][yNfr][org.hibernate.engine.transaction.internal.TransactionImpl]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+    [2021-12-10 18:16:20,185][DEBUG][yNfr][org.hibernate.engine.transaction.internal.TransactionImpl]-begin
+    [2021-12-10 18:16:20,187][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5f79db53]
+    
+    [2021-12-10 18:16:20,187][INFO ][yNfr][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] started.
+
+    [2021-12-10 18:16:20,187][INFO ][yNfr][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) start.
+        [2021-12-10 18:16:20,187][INFO ][yNfr][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) start.
+        [2021-12-10 18:16:20,187][INFO ][yNfr][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+
+        [2021-12-10 18:16:20,187][INFO ][yNfr][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+        [2021-12-10 18:16:20,189][INFO ][yNfr][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(1ms)
+
+        [2021-12-10 18:16:20,190][INFO ][yNfr][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_09fiov0](MO등록_jpa) start.
+            [2021-12-10 18:16:20,193][INFO ][yNfr][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMoJpa]
+            [2021-12-10 18:16:20,199][DEBUG][yNfr][io.github.thecodinglog.methodinvoker.ParameterTypeMethodArgumentBindingStrategy]-Type binding of interface com.dongkuk.dmes.cr.biz.plan.mo.MoRepository
+            [2021-12-10 18:16:20,200][DEBUG][yNfr][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy]-Parameter name binding of moNo
+            [2021-12-10 18:16:20,200][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Found thread-bound EntityManager [SessionImpl(403425514<open>)] for JPA transaction
+            [2021-12-10 18:16:20,200][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Participating in existing transaction
+            [2021-12-10 18:16:20,206][DEBUG][yNfr][org.hibernate.event.internal.EntityCopyObserverFactoryInitiator]-Configured EntityCopyObserver strategy: disallow
+            ???????
+            [2021-12-10 18:16:20,281][DEBUG][yNfr][org.hibernate.loader.Loader]-Static select for action ACTION_MERGE on entity com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity: select moheaentit0_.mo_no as mo_no1_0_0_, moheaentit0_.name as name2_0_0_, moheaentit0_.weight as weight3_0_0_ from mo_hea moheaentit0_ where moheaentit0_.mo_no=?
+
+            [2021-12-10 18:16:20,284][DEBUG][yNfr][org.hibernate.loader.Loader]-Loading entity: [com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity#M000024]
+            [2021-12-10 18:16:20,295][DEBUG][yNfr][org.hibernate.SQL]-
+                select
+                    moheaentit0_.mo_no as mo_no1_0_0_,
+                    moheaentit0_.name as name2_0_0_,
+                    moheaentit0_.weight as weight3_0_0_ 
+                from
+                    mo_hea moheaentit0_ 
+                where
+                    moheaentit0_.mo_no=?
+            [2021-12-10 18:16:20,306][DEBUG][yNfr][org.hibernate.loader.Loader]-Done entity load
+
+            [2021-12-10 18:16:20,312][DEBUG][yNfr][org.hibernate.event.internal.AbstractSaveEventListener]-Generated identifier: M000024, using strategy: org.hibernate.id.Assigned
+            [2021-12-10 18:16:20,312][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Processing flush-time cascades
+            [2021-12-10 18:16:20,312][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Dirty checking collections
+            [2021-12-10 18:16:20,313][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+            [2021-12-10 18:16:20,313][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+            [2021-12-10 18:16:20,313][DEBUG][yNfr][org.hibernate.internal.util.EntityPrinter]-Listing entities:
+            [2021-12-10 18:16:20,313][DEBUG][yNfr][org.hibernate.internal.util.EntityPrinter]-com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity{moNo=M000024, name=hihi, weight=null}
+            [2021-12-10 18:16:20,313][DEBUG][yNfr][org.hibernate.SQL]-
+                insert 
+                into
+                    mo_hea
+                    (name, weight, mo_no) 
+                values
+                    (?, ?, ?)
+        [2021-12-10 18:16:20,319][INFO ][yNfr][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_09fiov0](MO등록_jpa) finish.(128ms)
+        ????????
+
+
+
+
+        
+        [2021-12-10 18:16:20,319][INFO ][yNfr][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) start.
+            [2021-12-10 18:16:20,378][DEBUG][yNfr][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL query
+            [2021-12-10 18:16:20,380][DEBUG][yNfr][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL statement [select mo_no, name from mo_hea where mo_no = ?]
+            [2021-12-10 18:16:20,383][TRACE][yNfr][org.springframework.jdbc.core.StatementCreatorUtils]-Setting SQL statement parameter value: column index 1, parameter value [M000024], value class [java.lang.String], SQL type unknown
+            [2021-12-10 18:16:20,398][DEBUG][yNfr][com.dongkuk.oasis.executors.SqlScriptTaskExecutable]-1 row(s) selected.
+            ???? 쿼리 끝을 나태내는 문장이 있으면 좋겠다. 쿼리에 대한 runtime 시간도 필요
+
+
+
+
+
+
+        [2021-12-10 18:16:20,398][INFO ][yNfr][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) finish.(78ms)
+
+        [2021-12-10 18:16:20,399][INFO ][yNfr][com.dongkuk.oasis.model.event.DefaultEndEvent]-Task [Event_19ahwwh](Event_19ahwwh) start.
+        [2021-12-10 18:16:20,399][INFO ][yNfr][com.dongkuk.oasis.model.event.DefaultEndEvent]-Task [Event_19ahwwh](Event_19ahwwh) finish.(0ms)
+
+    [2021-12-10 18:16:20,399][INFO ][yNfr][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) finish.(211ms)
+
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Initiating transaction commit
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Committing JPA transaction on EntityManager [SessionImpl(403425514<open>)]
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.engine.transaction.internal.TransactionImpl]-committing
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Processing flush-time cascades
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Dirty checking collections
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.internal.util.EntityPrinter]-Listing entities:
+    [2021-12-10 18:16:20,399][DEBUG][yNfr][org.hibernate.internal.util.EntityPrinter]-com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity{moNo=M000024, name=hihi, weight=null}
+    [2021-12-10 18:16:20,402][DEBUG][yNfr][org.springframework.jdbc.datasource.DataSourceUtils]-Resetting isolation level of JDBC Connection [HikariProxyConnection@1696024568 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 4
+    [2021-12-10 18:16:20,405][DEBUG][yNfr][org.springframework.orm.jpa.JpaTransactionManager]-Closing JPA EntityManager [SessionImpl(403425514<open>)] after transaction
+    [2021-12-10 18:16:20,405][DEBUG][yNfr][org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl]-HHH000420: Closing un-released batch
+    [2021-12-10 18:16:20,405][INFO ][yNfr][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] has been committed.
+[2021-12-10 18:16:20,405][INFO ][yNfr][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] finish.(280ms)
+
+
+
+
+
+[2021-12-10 18:16:51,955][INFO ][F3Hu][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] start.
+    [2021-12-10 18:16:51,983][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_09fiov0
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0esc4cw
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : StartEvent_1
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0vwtv6v
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0qep0bz
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_1k6inig
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Gateway_1xtcgie
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Creating new transaction with name [txBiz]: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED
+    [2021-12-10 18:16:51,984][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Opened new EntityManager [SessionImpl(1151692773<open>)] for JPA transaction
+    [2021-12-10 18:16:51,987][DEBUG][F3Hu][org.springframework.jdbc.datasource.DataSourceUtils]-Changing isolation level of JDBC Connection [HikariProxyConnection@626898998 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 2
+    [2021-12-10 18:16:51,992][DEBUG][F3Hu][org.hibernate.engine.transaction.internal.TransactionImpl]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+    [2021-12-10 18:16:51,992][DEBUG][F3Hu][org.hibernate.engine.transaction.internal.TransactionImpl]-begin
+    [2021-12-10 18:16:51,995][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@97ed8ca]
+    [2021-12-10 18:16:51,995][INFO ][F3Hu][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] started.
+    [2021-12-10 18:16:51,995][INFO ][F3Hu][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) start.
+        [2021-12-10 18:16:51,995][INFO ][F3Hu][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) start.
+        [2021-12-10 18:16:51,996][INFO ][F3Hu][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+
+        [2021-12-10 18:16:51,996][INFO ][F3Hu][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+        [2021-12-10 18:16:51,996][INFO ][F3Hu][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+
+        [2021-12-10 18:16:51,996][INFO ][F3Hu][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_09fiov0](MO등록_jpa) start.
+            [2021-12-10 18:16:51,996][INFO ][F3Hu][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMoJpa]
+            [2021-12-10 18:16:51,999][DEBUG][F3Hu][io.github.thecodinglog.methodinvoker.ParameterTypeMethodArgumentBindingStrategy]-Type binding of interface com.dongkuk.dmes.cr.biz.plan.mo.MoRepository
+            [2021-12-10 18:16:51,999][DEBUG][F3Hu][io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy]-Parameter name binding of moNo
+            [2021-12-10 18:16:52,000][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Found thread-bound EntityManager [SessionImpl(1151692773<open>)] for JPA transaction
+            [2021-12-10 18:16:52,000][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Participating in existing transaction
+            [2021-12-10 18:16:52,000][DEBUG][F3Hu][org.hibernate.loader.Loader]-Loading entity: [com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity#M000024]
+            [2021-12-10 18:16:52,000][DEBUG][F3Hu][org.hibernate.SQL]-
+                select
+                    moheaentit0_.mo_no as mo_no1_0_0_,
+                    moheaentit0_.name as name2_0_0_,
+                    moheaentit0_.weight as weight3_0_0_ 
+                from
+                    mo_hea moheaentit0_ 
+                where
+                    moheaentit0_.mo_no=?
+            [2021-12-10 18:16:52,003][DEBUG][F3Hu][org.hibernate.loader.Loader]-Result set row: 0
+            [2021-12-10 18:16:52,004][DEBUG][F3Hu][org.hibernate.loader.Loader]-Result row: EntityKey[com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity#M000024]
+            [2021-12-10 18:16:52,014][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Resolving attributes for [com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity#M000024]
+            [2021-12-10 18:16:52,014][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Processing attribute `name` : value = hihi
+            [2021-12-10 18:16:52,014][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Attribute (`name`)  - enhanced for lazy-loading? - false
+            [2021-12-10 18:16:52,015][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Processing attribute `weight` : value = null
+            [2021-12-10 18:16:52,015][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Attribute (`weight`)  - enhanced for lazy-loading? - false
+            [2021-12-10 18:16:52,015][DEBUG][F3Hu][org.hibernate.engine.internal.TwoPhaseLoad]-Done materializing entity [com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity#M000024]
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.loader.Loader]-Done entity load
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Processing flush-time cascades
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Dirty checking collections
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.internal.util.EntityPrinter]-Listing entities:
+            [2021-12-10 18:16:52,016][DEBUG][F3Hu][org.hibernate.internal.util.EntityPrinter]-com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity{moNo=M000024, name=hihi, weight=null}
+        [2021-12-10 18:16:52,016][INFO ][F3Hu][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_09fiov0](MO등록_jpa) finish.(20ms)
+
+        [2021-12-10 18:16:52,016][INFO ][F3Hu][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) start.
+        [2021-12-10 18:16:52,017][DEBUG][F3Hu][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL query
+        [2021-12-10 18:16:52,017][DEBUG][F3Hu][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL statement [select mo_no, name from mo_hea where mo_no = ?]
+        [2021-12-10 18:16:52,017][TRACE][F3Hu][org.springframework.jdbc.core.StatementCreatorUtils]-Setting SQL statement parameter value: column index 1, parameter value [M000024], value class [java.lang.String], SQL type unknown
+        [2021-12-10 18:16:52,022][DEBUG][F3Hu][com.dongkuk.oasis.executors.SqlScriptTaskExecutable]-1 row(s) selected.
+        [2021-12-10 18:16:52,022][INFO ][F3Hu][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) finish.(5ms)
+        [2021-12-10 18:16:52,023][INFO ][F3Hu][com.dongkuk.oasis.model.event.DefaultEndEvent]-Task [Event_19ahwwh](Event_19ahwwh) start.
+        [2021-12-10 18:16:52,023][INFO ][F3Hu][com.dongkuk.oasis.model.event.DefaultEndEvent]-Task [Event_19ahwwh](Event_19ahwwh) finish.(0ms)
+    [2021-12-10 18:16:52,023][INFO ][F3Hu][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) finish.(27ms)
+
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Initiating transaction commit
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Committing JPA transaction on EntityManager [SessionImpl(1151692773<open>)]
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.hibernate.engine.transaction.internal.TransactionImpl]-committing
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Processing flush-time cascades
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Dirty checking collections
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+    [2021-12-10 18:16:52,023][DEBUG][F3Hu][org.hibernate.event.internal.AbstractFlushingEventListener]-Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+    [2021-12-10 18:16:52,024][DEBUG][F3Hu][org.hibernate.internal.util.EntityPrinter]-Listing entities:
+    [2021-12-10 18:16:52,024][DEBUG][F3Hu][org.hibernate.internal.util.EntityPrinter]-com.dongkuk.dmes.cr.biz.plan.mo.MoHeaEntity{moNo=M000024, name=hihi, weight=null}
+    [2021-12-10 18:16:52,029][DEBUG][F3Hu][org.springframework.jdbc.datasource.DataSourceUtils]-Resetting isolation level of JDBC Connection [HikariProxyConnection@626898998 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 4
+    [2021-12-10 18:16:52,032][DEBUG][F3Hu][org.springframework.orm.jpa.JpaTransactionManager]-Closing JPA EntityManager [SessionImpl(1151692773<open>)] after transaction
+    [2021-12-10 18:16:52,032][INFO ][F3Hu][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] has been committed.
+[2021-12-10 18:16:52,032][INFO ][F3Hu][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] finish.(77ms)

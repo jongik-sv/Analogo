@@ -1,0 +1,700 @@
+[2021-12-20 16:05:12,747][INFO ][][com.dongkuk.dmes.cr.pmf.DmesCrPmfWebJarApplication(55)]-Starting DmesCrPmfWebJarApplication using Java 11.0.9 on DESKTOP-B023J4B with PID 9004 (C:\Users\USER\dev-env-dmes-cr\source\dmes-cr-pmf\dmes-cr-pmf-web-jar\build\classes\java\main started by USER in C:\Users\USER\dev-env-dmes-cr\source\dmes-cr-pmf)
+[2021-12-20 16:05:12,760][INFO ][][com.dongkuk.dmes.cr.pmf.DmesCrPmfWebJarApplication(639)]-The following profiles are active: prd
+[2021-12-20 16:05:13,001][INFO ][][org.springframework.context.annotation.ConfigurationClassParser(469)]-Properties location [classpath:/properties/application.properties] not resolvable: class path resource [properties/application.properties] cannot be opened because it does not exist
+[2021-12-20 16:05:13,435][INFO ][][org.springframework.data.repository.config.RepositoryConfigurationDelegate(132)]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-12-20 16:05:13,507][INFO ][][org.springframework.data.repository.config.RepositoryConfigurationDelegate(201)]-Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+[2021-12-20 16:05:13,508][INFO ][][org.springframework.data.repository.config.RepositoryConfigurationDelegate(132)]-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-12-20 16:05:13,519][INFO ][][org.springframework.data.repository.config.RepositoryConfigurationDelegate(201)]-Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+[2021-12-20 16:05:13,837][WARN ][][org.mybatis.spring.mapper.ClassPathMapperScanner(44)]-No MyBatis mapper was found in '[com.dongkuk.dmes.cr.biz]' package. Please check your configuration.
+[2021-12-20 16:05:14,439][INFO ][][org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108)]-Tomcat initialized with port(s): 8080 (http)
+[2021-12-20 16:05:14,619][INFO ][][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(290)]-Root WebApplicationContext: initialization completed in 1804 ms
+[2021-12-20 16:05:14,729][INFO ][][com.dongkuk.dmes.cr.frm.config.datasource.BizRepositoryConfig$DataSourceConfigPrd(111)]-prd datasource
+[2021-12-20 16:05:15,062][INFO ][][org.hibernate.jpa.internal.util.LogHelper(31)]-HHH000204: Processing PersistenceUnitInfo [name: biz]
+[2021-12-20 16:05:15,172][INFO ][][org.hibernate.Version(44)]-HHH000412: Hibernate ORM core version 5.6.1.Final
+[2021-12-20 16:05:15,478][INFO ][][org.hibernate.annotations.common.Version(56)]-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-12-20 16:05:15,735][INFO ][][com.zaxxer.hikari.HikariDataSource(110)]-HikariPool-1 - Starting...
+[2021-12-20 16:05:15,738][WARN ][][com.zaxxer.hikari.util.DriverDataSource(70)]-Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2021-12-20 16:05:15,929][INFO ][][com.zaxxer.hikari.HikariDataSource(123)]-HikariPool-1 - Start completed.
+[2021-12-20 16:05:15,951][INFO ][][org.hibernate.dialect.Dialect(175)]-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2021-12-20 16:05:16,010][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(149)]-Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@29d3d0fb] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1bfa3893]
+[2021-12-20 16:05:16,318][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(154)]-Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@29d3d0fb] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@341ccfd1]
+[2021-12-20 16:05:16,752][DEBUG][][org.hibernate.SQL(144)]-
+    
+    drop table if exists mo_hea
+[2021-12-20 16:05:16,757][INFO ][][org.hibernate.orm.connections.access(48)]-HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f8df69] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2021-12-20 16:05:16,788][DEBUG][][org.hibernate.SQL(144)]-
+    
+    create table mo_hea (
+       mo_no varchar(255) not null,
+        name varchar(255),
+        weight integer,
+        primary key (mo_no)
+    ) engine=MyISAM
+[2021-12-20 16:05:16,788][INFO ][][org.hibernate.orm.connections.access(48)]-HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cd90c36] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2021-12-20 16:05:16,830][INFO ][][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(52)]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-12-20 16:05:16,845][TRACE][][org.hibernate.type.spi.TypeConfiguration$Scope(202)]-Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@341ccfd1] for TypeConfiguration
+[2021-12-20 16:05:16,848][INFO ][][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(437)]-Initialized JPA EntityManagerFactory for persistence unit 'biz'
+[2021-12-20 16:05:16,900][INFO ][][com.dongkuk.dmes.cr.frm.config.datasource.FrmRepositoryConfig$DataSourceConfigPrd(111)]-prd datasource
+[2021-12-20 16:05:16,910][INFO ][][org.hibernate.jpa.internal.util.LogHelper(31)]-HHH000204: Processing PersistenceUnitInfo [name: frm]
+[2021-12-20 16:05:16,938][INFO ][][com.zaxxer.hikari.HikariDataSource(110)]-HikariPool-2 - Starting...
+[2021-12-20 16:05:16,938][WARN ][][com.zaxxer.hikari.util.DriverDataSource(70)]-Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2021-12-20 16:05:16,968][INFO ][][com.zaxxer.hikari.HikariDataSource(123)]-HikariPool-2 - Start completed.
+[2021-12-20 16:05:16,968][INFO ][][org.hibernate.dialect.Dialect(175)]-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2021-12-20 16:05:16,976][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(149)]-Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2ee095c9] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@185a0811]
+[2021-12-20 16:05:17,010][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(154)]-Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2ee095c9] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@667dd150]
+[2021-12-20 16:05:17,015][DEBUG][][org.hibernate.SQL(144)]-
+    
+    drop table if exists hibernate_sequence
+[2021-12-20 16:05:17,017][INFO ][][org.hibernate.orm.connections.access(48)]-HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4247093b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2021-12-20 16:05:17,032][DEBUG][][org.hibernate.SQL(144)]-
+    
+    drop table if exists request_log
+[2021-12-20 16:05:17,042][DEBUG][][org.hibernate.SQL(144)]-
+    
+    create table hibernate_sequence (
+       next_val bigint
+    ) engine=MyISAM
+[2021-12-20 16:05:17,043][INFO ][][org.hibernate.orm.connections.access(48)]-HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5bdb6ea8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2021-12-20 16:05:17,060][DEBUG][][org.hibernate.SQL(144)]-
+    
+    insert into hibernate_sequence values ( 1 )
+[2021-12-20 16:05:17,069][DEBUG][][org.hibernate.SQL(144)]-
+    
+    create table request_log (
+       id bigint not null,
+        content varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+[2021-12-20 16:05:17,102][INFO ][][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(52)]-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-12-20 16:05:17,102][TRACE][][org.hibernate.type.spi.TypeConfiguration$Scope(202)]-Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@667dd150] for TypeConfiguration
+[2021-12-20 16:05:17,102][INFO ][][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean(437)]-Initialized JPA EntityManagerFactory for persistence unit 'frm'
+[2021-12-20 16:05:17,931][INFO ][][org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220)]-Tomcat started on port(s): 8080 (http) with context path '/pmf'
+[2021-12-20 16:05:17,940][INFO ][][com.dongkuk.dmes.cr.pmf.DmesCrPmfWebJarApplication(61)]-Started DmesCrPmfWebJarApplication in 5.85 seconds (JVM running for 7.815)
+[2021-12-20 16:05:21,773][INFO ][][org.springframework.web.servlet.DispatcherServlet(525)]-Initializing Servlet 'dispatcherServlet'
+[2021-12-20 16:05:21,774][INFO ][][org.springframework.web.servlet.DispatcherServlet(547)]-Completed initialization in 1 ms
+[2021-12-20 16:05:21,906][DEBUG][NqNJ][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:21,935][DEBUG][NqNJ][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:21,985][DEBUG][NqNJ][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:21,991][TRACE][NqNJ][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:21,993][TRACE][NqNJ][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [1]
+[2021-12-20 16:05:22,014][INFO ][NqNJ][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [greeting] start.
+[2021-12-20 16:05:22,134][INFO ][NqNJ][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:22,136][INFO ][NqNJ][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:22,142][INFO ][NqNJ][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:22,148][INFO ][NqNJ][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(5ms)
+[2021-12-20 16:05:22,148][INFO ][NqNJ][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0qep0bz](인사) start.
+[2021-12-20 16:05:22,159][INFO ][NqNJ][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:22,177][INFO ][NqNJ][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Kim, hello.
+[2021-12-20 16:05:22,178][INFO ][NqNJ][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0qep0bz](인사) finish.(30ms)
+[2021-12-20 16:05:22,196][INFO ][NqNJ][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-20 16:05:22,197][INFO ][NqNJ][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-20 16:05:22,198][INFO ][NqNJ][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(61ms)
+[2021-12-20 16:05:22,204][INFO ][NqNJ][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:22,205][INFO ][NqNJ][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [greeting] finish.(191ms)
+[2021-12-20 16:05:24,068][DEBUG][Cj8j][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:24,071][DEBUG][Cj8j][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:24,080][DEBUG][Cj8j][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:24,080][TRACE][Cj8j][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:24,080][TRACE][Cj8j][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [2]
+[2021-12-20 16:05:24,086][INFO ][Cj8j][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [parallelGreeting] start.
+[2021-12-20 16:05:24,114][INFO ][Cj8j][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:24,114][INFO ][Cj8j][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:24,114][INFO ][Cj8j][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:24,114][INFO ][Cj8j][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:24,115][INFO ][Cj8j][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+[2021-12-20 16:05:24,119][INFO ][Cj8j][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(3ms)
+[2021-12-20 16:05:24,119][INFO ][Cj8j][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+[2021-12-20 16:05:24,121][INFO ][Cj8j:xgUg][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+[2021-12-20 16:05:24,121][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+[2021-12-20 16:05:24,123][INFO ][Cj8j:xgUg][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1msngyv](인사1 프로세스) start.
+[2021-12-20 16:05:24,123][INFO ][Cj8j:AaaB][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+[2021-12-20 16:05:24,123][INFO ][Cj8j:xgUg][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+[2021-12-20 16:05:24,123][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+[2021-12-20 16:05:24,123][INFO ][Cj8j:xgUg][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:24,123][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+[2021-12-20 16:05:24,123][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+[2021-12-20 16:05:24,124][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+[2021-12-20 16:05:24,124][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:xgUg][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:xgUg][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(1ms)
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:xgUg][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1msngyv](인사1 프로세스) finish.(2ms)
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+[2021-12-20 16:05:24,125][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:24,126][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:24,127][INFO ][Cj8j:xgUg][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(5ms)
+[2021-12-20 16:05:24,128][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+[2021-12-20 16:05:24,128][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-kjj, hello.
+[2021-12-20 16:05:24,128][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(2ms)
+[2021-12-20 16:05:24,128][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(2ms)
+[2021-12-20 16:05:24,129][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(3ms)
+[2021-12-20 16:05:24,129][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(3ms)
+[2021-12-20 16:05:24,129][INFO ][Cj8j:AaaB:cxRf][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(3ms)
+[2021-12-20 16:05:24,129][INFO ][Cj8j:AaaB:0ceD][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(4ms)
+[2021-12-20 16:05:24,130][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(6ms)
+[2021-12-20 16:05:24,131][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+[2021-12-20 16:05:24,131][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+[2021-12-20 16:05:24,131][INFO ][Cj8j:AaaB][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(8ms)
+[2021-12-20 16:05:24,131][INFO ][Cj8j:AaaB][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(10ms)
+[2021-12-20 16:05:24,132][INFO ][Cj8j][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(12ms)
+[2021-12-20 16:05:24,132][INFO ][Cj8j][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-20 16:05:24,132][INFO ][Cj8j][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-20 16:05:24,133][INFO ][Cj8j][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(18ms)
+[2021-12-20 16:05:24,137][INFO ][Cj8j][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:24,137][INFO ][Cj8j][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [parallelGreeting] finish.(50ms)
+[2021-12-20 16:05:26,319][DEBUG][Mmuu][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:26,322][DEBUG][Mmuu][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:26,327][DEBUG][Mmuu][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:26,328][TRACE][Mmuu][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:26,328][TRACE][Mmuu][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [3]
+[2021-12-20 16:05:26,334][INFO ][Mmuu][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [mo] start.
+[2021-12-20 16:05:26,357][INFO ][Mmuu][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:26,358][INFO ][Mmuu][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:26,358][INFO ][Mmuu][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:26,359][INFO ][Mmuu][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:26,359][INFO ][Mmuu][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:26,359][INFO ][Mmuu][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:26,360][INFO ][Mmuu][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0qep0bz](MO등록) start.
+[2021-12-20 16:05:26,362][INFO ][Mmuu][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMo]
+[2021-12-20 16:05:26,405][INFO ][Mmuu][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(37)]-
+/* com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMo */
+insert into biz.mo_hea(mo_no, weight)
+        values (?, ?)
+[2021-12-20 16:05:26,405][INFO ][Mmuu][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [0] as [java.lang.String] - [M000164]
+[2021-12-20 16:05:26,405][INFO ][Mmuu][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [1] as [java.lang.Integer] - [12300]
+[2021-12-20 16:05:26,418][INFO ][Mmuu][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0qep0bz](MO등록) finish.(58ms)
+[2021-12-20 16:05:26,419][INFO ][Mmuu][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_1k6inig](MO 조회) start.
+[2021-12-20 16:05:26,436][DEBUG][Mmuu][org.springframework.jdbc.core.JdbcTemplate(711)]-Executing prepared SQL query
+[2021-12-20 16:05:26,437][DEBUG][Mmuu][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select mo_no, weight from mo_hea where mo_no = ?]
+[2021-12-20 16:05:26,438][TRACE][Mmuu][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000164], value class [java.lang.String], SQL type unknown
+[2021-12-20 16:05:26,449][INFO ][Mmuu][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_1k6inig](MO 조회) finish.(30ms)
+[2021-12-20 16:05:26,450][INFO ][Mmuu][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-20 16:05:26,450][INFO ][Mmuu][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-20 16:05:26,450][INFO ][Mmuu][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(91ms)
+[2021-12-20 16:05:26,455][INFO ][Mmuu][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:26,455][INFO ][Mmuu][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(119ms)
+[2021-12-20 16:05:29,160][DEBUG][R5fF][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:29,163][DEBUG][R5fF][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:29,168][DEBUG][R5fF][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:29,169][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:29,169][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [4]
+[2021-12-20 16:05:29,173][INFO ][R5fF][com.dongkuk.oasis.service.SpringServiceStarter(23)]-Service [mo] start. by [hihihi]
+[2021-12-20 16:05:29,188][INFO ][R5fF][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:29,188][INFO ][R5fF][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:29,189][INFO ][R5fF][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:29,189][INFO ][R5fF][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:29,189][INFO ][R5fF][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:29,189][INFO ][R5fF][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:29,189][INFO ][R5fF][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_09fiov0](MO등록_jpa) start.
+[2021-12-20 16:05:29,190][INFO ][R5fF][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMoJpa]
+[2021-12-20 16:05:29,227][DEBUG][R5fF][org.hibernate.SQL(144)]-
+    select
+        moheaentit0_.mo_no as mo_no1_0_0_,
+        moheaentit0_.name as name2_0_0_,
+        moheaentit0_.weight as weight3_0_0_ 
+    from
+        mo_hea moheaentit0_ 
+    where
+        moheaentit0_.mo_no=?
+[2021-12-20 16:05:29,227][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [M000024]
+[2021-12-20 16:05:29,235][DEBUG][R5fF][org.hibernate.SQL(144)]-
+    insert 
+    into
+        mo_hea
+        (name, weight, mo_no) 
+    values
+        (?, ?, ?)
+[2021-12-20 16:05:29,235][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [hihi]
+[2021-12-20 16:05:29,236][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(52)]-binding parameter [2] as [INTEGER] - [null]
+[2021-12-20 16:05:29,236][TRACE][R5fF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [3] as [VARCHAR] - [M000024]
+[2021-12-20 16:05:29,239][INFO ][R5fF][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_09fiov0](MO등록_jpa) finish.(49ms)
+[2021-12-20 16:05:29,239][INFO ][R5fF][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_0vwtv6v](MO 조회) start.
+[2021-12-20 16:05:29,240][DEBUG][R5fF][org.springframework.jdbc.core.JdbcTemplate(711)]-Executing prepared SQL query
+[2021-12-20 16:05:29,240][DEBUG][R5fF][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select mo_no, name from mo_hea where mo_no = ?]
+[2021-12-20 16:05:29,240][TRACE][R5fF][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000024], value class [java.lang.String], SQL type unknown
+[2021-12-20 16:05:29,245][INFO ][R5fF][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_0vwtv6v](MO 조회) finish.(5ms)
+[2021-12-20 16:05:29,245][INFO ][R5fF][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_19ahwwh](Event_19ahwwh) start.
+[2021-12-20 16:05:29,245][INFO ][R5fF][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_19ahwwh](Event_19ahwwh) finish.(0ms)
+[2021-12-20 16:05:29,245][INFO ][R5fF][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(56ms)
+[2021-12-20 16:05:29,250][INFO ][R5fF][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:29,250][INFO ][R5fF][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(76ms)
+[2021-12-20 16:05:31,395][DEBUG][nDnH][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:31,398][DEBUG][nDnH][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:31,404][DEBUG][nDnH][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:31,404][TRACE][nDnH][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:31,404][TRACE][nDnH][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [5]
+[2021-12-20 16:05:31,411][INFO ][nDnH][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [mo] start.
+[2021-12-20 16:05:31,429][INFO ][nDnH][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:31,429][INFO ][nDnH][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:31,429][INFO ][nDnH][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:31,429][INFO ][nDnH][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:31,429][INFO ][nDnH][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:31,430][INFO ][nDnH][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:31,430][INFO ][nDnH][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0esc4cw](MO등록_exception) start.
+[2021-12-20 16:05:31,430][INFO ][nDnH][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [throwException]
+[2021-12-20 16:05:31,433][INFO ][nDnH][com.dongkuk.oasis.model.activity.JavaServiceTask(41)]-Task [Activity_0esc4cw](MO등록_exception) finish with exceptions.(2ms)
+[2021-12-20 16:05:31,434][INFO ][nDnH][com.dongkuk.oasis.process.CoreProcessStarter(39)]-Process [Process_05xymvn](Process_05xymvn) finish with exceptions.(3ms)
+[2021-12-20 16:05:31,441][INFO ][nDnH][com.dongkuk.oasis.transaction.SpringTransactionHandler(157)]-Transaction [txBiz] has been rolled back.
+[2021-12-20 16:05:31,442][ERROR][nDnH][com.dongkuk.oasis.service.StopWatchServiceStarter(38)]-my exception
+java.lang.RuntimeException: my exception
+	at com.dongkuk.dmes.cr.biz.plan.mo.Mo.throwException(Mo.java:30) ~[main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.github.thecodinglog.methodinvoker.StrictMethodInvoker.invoke(StrictMethodInvoker.java:60) ~[method-invoker-0.2.0.jar:?]
+	at com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable.execute(PlainJavaServiceTaskExecutable.java:86) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.executors.JavaServiceTaskExecutable.execute(JavaServiceTaskExecutable.java:46) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.executors.CoreElementExecutor.execute(CoreElementExecutor.java:74) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.executors.StopWatchElementExecutor.execute(StopWatchElementExecutor.java:36) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.process.CoreProcessStarter.start(CoreProcessStarter.java:99) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.process.AbstractStopWatchProcessStarter.start(AbstractStopWatchProcessStarter.java:32) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.process.StopWatchProcessStarter.start(StopWatchProcessStarter.java:26) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.service.CoreServiceStarter.lambda$start$3(CoreServiceStarter.java:94) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.transaction.SpringTransactionHandler.execute(SpringTransactionHandler.java:215) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.service.CoreServiceStarter.start(CoreServiceStarter.java:93) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.service.SpringServiceStarter.start(SpringServiceStarter.java:33) ~[oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.service.WatchServiceStarter.logAndServiceStart(WatchServiceStarter.java:35) [oasis-core-4.2.0.jar:?]
+	at com.dongkuk.oasis.service.StopWatchServiceStarter.start(StopWatchServiceStarter.java:29) [oasis-core-4.2.0.jar:?]
+	at com.dongkuk.dmes.cr.frm.inbound.ServiceController.service(ServiceController.java:55) [dmes-cr-frm-config-0.0.0.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at com.dongkuk.dmes.cr.frm.filters.TraceIdLoggingFilter$1.process(TraceIdLoggingFilter.java:23) [dmes-cr-frm-config-0.0.0.jar:?]
+	at com.dongkuk.oasis.logger.MDCTemplate.mdc(MDCTemplate.java:34) [oasis-core-4.2.0.jar:?]
+	at com.dongkuk.dmes.cr.frm.filters.TraceIdLoggingFilter.doFilter(TraceIdLoggingFilter.java:29) [dmes-cr-frm-config-0.0.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[2021-12-20 16:05:31,453][INFO ][nDnH][com.dongkuk.oasis.service.SpringServiceStarter(46)]-Service [mo] finish with exceptions.(41ms)
+[2021-12-20 16:05:38,405][DEBUG][1fCa][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:38,408][DEBUG][1fCa][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:38,416][DEBUG][1fCa][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:38,417][TRACE][1fCa][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:38,417][TRACE][1fCa][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [6]
+[2021-12-20 16:05:38,423][INFO ][1fCa][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [iterGreeting] start.
+[2021-12-20 16:05:38,438][INFO ][1fCa][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:38,438][INFO ][1fCa][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:38,438][INFO ][1fCa][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:38,438][INFO ][1fCa][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:38,438][INFO ][1fCa][com.dongkuk.oasis.model.activity.DefaultTask(24)]-Task [Activity_05hmina](자료) start.
+[2021-12-20 16:05:38,440][INFO ][1fCa][com.dongkuk.oasis.model.activity.DefaultTask(31)]-Task [Activity_05hmina](자료) finish.(0ms)
+[2021-12-20 16:05:38,441][INFO ][1fCa][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0qep0bz](병렬 인사) start.
+[2021-12-20 16:05:38,442][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,442][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,442][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,443][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,443][INFO ][1fCa:4Tq7][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,443][INFO ][1fCa:tjab][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,443][INFO ][1fCa:BDQS][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,443][INFO ][1fCa:N4L1][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,444][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,444][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,444][INFO ][1fCa:oAWy][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,444][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,444][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,444][INFO ][1fCa:qNLA][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,445][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,446][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,446][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,446][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,446][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,446][INFO ][1fCa:N4L1][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Dorothy, hello.
+[2021-12-20 16:05:38,446][INFO ][1fCa:oAWy][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Migguraji, hello.
+[2021-12-20 16:05:38,446][INFO ][1fCa:4Tq7][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Chaly, hello.
+[2021-12-20 16:05:38,446][INFO ][1fCa:8M3Y][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,446][INFO ][1fCa:3kkQ][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,449][INFO ][1fCa:tjab][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Enderson, hello.
+[2021-12-20 16:05:38,449][INFO ][1fCa:Tj9l][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,449][INFO ][1fCa:qNLA][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Wooji, hello.
+[2021-12-20 16:05:38,449][INFO ][1fCa:BDQS][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Miki, hello.
+[2021-12-20 16:05:38,451][INFO ][1fCa:3kkQ][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Ela, hello.
+[2021-12-20 16:05:38,451][INFO ][1fCa:8M3Y][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Ken, hello.
+[2021-12-20 16:05:38,451][INFO ][1fCa:Tj9l][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Mominic, hello.
+[2021-12-20 16:05:38,454][INFO ][1fCa][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0qep0bz](병렬 인사) finish.(12ms)
+[2021-12-20 16:05:38,454][INFO ][1fCa][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_1qtdbhy](순서 인사) start.
+[2021-12-20 16:05:38,454][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,455][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,456][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Chaly, hello.
+[2021-12-20 16:05:38,457][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,457][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,457][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,458][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Miki, hello.
+[2021-12-20 16:05:38,458][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,458][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,458][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,460][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Dorothy, hello.
+[2021-12-20 16:05:38,460][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,460][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,460][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,461][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Enderson, hello.
+[2021-12-20 16:05:38,461][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,461][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,461][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,462][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Migguraji, hello.
+[2021-12-20 16:05:38,462][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,462][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,463][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,464][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Wooji, hello.
+[2021-12-20 16:05:38,464][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,464][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,464][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,465][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Ken, hello.
+[2021-12-20 16:05:38,465][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,465][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,465][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,466][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Ela, hello.
+[2021-12-20 16:05:38,466][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,466][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(42)]-Multi Instance task start
+[2021-12-20 16:05:38,466][INFO ][1fCa][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:38,467][INFO ][1fCa][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-Mominic, hello.
+[2021-12-20 16:05:38,467][INFO ][1fCa][com.dongkuk.oasis.executors.MultiInstanceInternalElementExecutor(44)]-Multi Instance task finish
+[2021-12-20 16:05:38,467][INFO ][1fCa][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_1qtdbhy](순서 인사) finish.(13ms)
+[2021-12-20 16:05:38,468][INFO ][1fCa][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-20 16:05:38,468][INFO ][1fCa][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-20 16:05:38,468][INFO ][1fCa][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(30ms)
+[2021-12-20 16:05:38,472][INFO ][1fCa][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:38,472][INFO ][1fCa][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [iterGreeting] finish.(49ms)
+[2021-12-20 16:05:41,459][DEBUG][XW88][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:41,462][DEBUG][XW88][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:41,466][DEBUG][XW88][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:41,466][TRACE][XW88][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:41,467][TRACE][XW88][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [7]
+[2021-12-20 16:05:41,471][INFO ][XW88][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [mo] start.
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:41,483][INFO ][XW88][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_00ycx5n](MO등록 현황) start.
+[2021-12-20 16:05:41,484][INFO ][XW88][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [moList]
+[2021-12-20 16:05:41,487][INFO ][XW88][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(37)]-
+/* com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.moList */
+select mo_no, weight, ?, ?
+        from biz.mo_hea
+[2021-12-20 16:05:41,488][INFO ][XW88][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [0] as [java.lang.String] - [M000164]
+[2021-12-20 16:05:41,488][INFO ][XW88][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [1] as [java.lang.Integer] - [12300]
+[2021-12-20 16:05:41,499][INFO ][XW88][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_00ycx5n](MO등록 현황) finish.(15ms)
+[2021-12-20 16:05:41,500][INFO ][XW88][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1lzggko](Event_1lzggko) start.
+[2021-12-20 16:05:41,501][INFO ][XW88][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1lzggko](Event_1lzggko) finish.(0ms)
+[2021-12-20 16:05:41,501][INFO ][XW88][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(17ms)
+[2021-12-20 16:05:41,505][INFO ][XW88][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:41,505][INFO ][XW88][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(34ms)
+[2021-12-20 16:05:44,605][DEBUG][AUKF][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:44,608][DEBUG][AUKF][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:44,614][DEBUG][AUKF][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:44,614][TRACE][AUKF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:44,614][TRACE][AUKF][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [8]
+[2021-12-20 16:05:44,620][INFO ][AUKF][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [mo] start.
+[2021-12-20 16:05:44,634][INFO ][AUKF][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:44,634][INFO ][AUKF][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:44,634][INFO ][AUKF][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:44,634][INFO ][AUKF][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:44,634][INFO ][AUKF][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:44,635][INFO ][AUKF][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:44,635][INFO ][AUKF][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_10vkttk](MO등록withName) start.
+[2021-12-20 16:05:44,635][INFO ][AUKF][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [newMoWithName]
+[2021-12-20 16:05:44,639][INFO ][AUKF][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(37)]-
+/* com.dongkuk.dmes.cr.biz.plan.mo.MoRepository.addMoWithName */
+insert into biz.mo_hea(mo_no, weight)
+        values (?, ?)
+[2021-12-20 16:05:44,639][INFO ][AUKF][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [0] as [java.lang.String] - [M000012]
+[2021-12-20 16:05:44,639][INFO ][AUKF][com.dongkuk.dmes.cr.frm.access.log.MybatisSqlLogger(43)]-binding parameter [1] as [java.lang.Integer] - [12300]
+[2021-12-20 16:05:44,645][INFO ][AUKF][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_10vkttk](MO등록withName) finish.(9ms)
+[2021-12-20 16:05:44,645][INFO ][AUKF][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_0qmwmaj](MO 조회) start.
+[2021-12-20 16:05:44,645][DEBUG][AUKF][org.springframework.jdbc.core.JdbcTemplate(711)]-Executing prepared SQL query
+[2021-12-20 16:05:44,645][DEBUG][AUKF][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select /* sample */mo_no, weight from mo_hea where mo_no = ?]
+[2021-12-20 16:05:44,646][TRACE][AUKF][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000012], value class [java.lang.String], SQL type unknown
+[2021-12-20 16:05:44,651][INFO ][AUKF][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_0qmwmaj](MO 조회) finish.(5ms)
+[2021-12-20 16:05:44,651][INFO ][AUKF][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_07yux3u](Event_07yux3u) start.
+[2021-12-20 16:05:44,651][INFO ][AUKF][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_07yux3u](Event_07yux3u) finish.(0ms)
+[2021-12-20 16:05:44,651][INFO ][AUKF][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(16ms)
+[2021-12-20 16:05:44,656][INFO ][AUKF][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:44,656][INFO ][AUKF][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(36ms)
+[2021-12-20 16:05:46,884][DEBUG][YbZI][org.hibernate.SQL(144)]-
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+[2021-12-20 16:05:46,886][DEBUG][YbZI][org.hibernate.SQL(144)]-
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+[2021-12-20 16:05:46,891][DEBUG][YbZI][org.hibernate.SQL(144)]-
+    insert 
+    into
+        request_log
+        (content, id) 
+    values
+        (?, ?)
+[2021-12-20 16:05:46,891][TRACE][YbZI][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [1] as [VARCHAR] - [payload:[null]]
+[2021-12-20 16:05:46,891][TRACE][YbZI][org.hibernate.type.descriptor.sql.BasicBinder(64)]-binding parameter [2] as [BIGINT] - [9]
+[2021-12-20 16:05:46,896][INFO ][YbZI][com.dongkuk.oasis.service.SpringServiceStarter(27)]-Service [mo] start.
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.transaction.SpringTransactionHandler(82)]-Transaction [txBiz] started.
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(24)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway(31)]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+[2021-12-20 16:05:46,909][INFO ][YbZI][com.dongkuk.oasis.model.activity.SubServiceCallTask(24)]-Task [Activity_1obyfx7](parallelGreeting) start.
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Process_05xymvn](Process_05xymvn) start.
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [StartEvent_1](StartEvent_1) start.
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_1udd4th](Gateway_1udd4th) start.
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_1udd4th](Gateway_1udd4th) finish.(0ms)
+[2021-12-20 16:05:46,916][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) start.
+[2021-12-20 16:05:46,917][INFO ][YbZI:Hego][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1msngyv](인사1 프로세스) start.
+[2021-12-20 16:05:46,917][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0nlxb65](인사2 메인 프로세스) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:Hego][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1msngyv](인사1 프로세스) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0nlxb65](인사2 메인 프로세스) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:Hego][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0o9fhf8](인사1) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.event.DefaultStartEvent(24)]-Task [Event_1smi0ye](Event_1smi0ye) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:Hego][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.event.DefaultStartEvent(31)]-Task [Event_1smi0ye](Event_1smi0ye) finish.(0ms)
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) start.
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0xdapvd](Gateway_0xdapvd) finish.(0ms)
+[2021-12-20 16:05:46,918][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(24)]-Task [Gateway_111cvzu](Gateway_111cvzu) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_0mq11dx](인사2 프로세스) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(24)]-Task [Activity_1o33vaa](인사3 프로세스) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_0mq11dx](인사2 프로세스) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.process.CoreProcessStarter(22)]-Process [Activity_1o33vaa](인사3 프로세스) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:Hego][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0s0rbua](인사3) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.model.activity.JavaServiceTask(24)]-Task [Activity_0wmahw6](인사2) start.
+[2021-12-20 16:05:46,919][INFO ][YbZI:Hego][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0o9fhf8](인사1) finish.(1ms)
+[2021-12-20 16:05:46,919][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:46,920][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable(66)]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.Hello], method : [greeting]
+[2021-12-20 16:05:46,920][INFO ][YbZI:Hego][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1msngyv](인사1 프로세스) finish.(1ms)
+[2021-12-20 16:05:46,920][INFO ][YbZI:Hego][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1msngyv](인사1 프로세스) finish.(2ms)
+[2021-12-20 16:05:46,921][INFO ][YbZI:eWqP:KTbn][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+[2021-12-20 16:05:46,921][INFO ][YbZI:eWqP:8phX][com.dongkuk.dmes.cr.biz.plan.Hello(10)]-JeongjinKim, hello.
+[2021-12-20 16:05:46,921][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0s0rbua](인사3) finish.(1ms)
+[2021-12-20 16:05:46,922][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.model.activity.JavaServiceTask(31)]-Task [Activity_0wmahw6](인사2) finish.(1ms)
+[2021-12-20 16:05:46,922][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_1o33vaa](인사3 프로세스) finish.(2ms)
+[2021-12-20 16:05:46,922][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0mq11dx](인사2 프로세스) finish.(2ms)
+[2021-12-20 16:05:46,922][INFO ][YbZI:eWqP:KTbn][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_1o33vaa](인사3 프로세스) finish.(2ms)
+[2021-12-20 16:05:46,922][INFO ][YbZI:eWqP:8phX][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0mq11dx](인사2 프로세스) finish.(2ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_111cvzu](Gateway_111cvzu) finish.(4ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_1035s1u](Event_1035s1u) start.
+[2021-12-20 16:05:46,923][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_1035s1u](Event_1035s1u) finish.(0ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI:eWqP][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Activity_0nlxb65](인사2 메인 프로세스) finish.(5ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI:eWqP][com.dongkuk.oasis.model.activity.DefaultInlineSubProcess(31)]-Task [Activity_0nlxb65](인사2 메인 프로세스) finish.(5ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.model.gateway.DefaultParallelGateway(31)]-Task [Gateway_0qw4j58](Gateway_0qw4j58) finish.(7ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_0t44im8](Event_0t44im8) start.
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_0t44im8](Event_0t44im8) finish.(0ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(8ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.model.activity.SubServiceCallTask(31)]-Task [Activity_1obyfx7](parallelGreeting) finish.(13ms)
+[2021-12-20 16:05:46,923][INFO ][YbZI][com.dongkuk.oasis.model.activity.SqlScriptTask(24)]-Task [Activity_0591vg1](MO 조회) start.
+[2021-12-20 16:05:46,923][DEBUG][YbZI][org.springframework.jdbc.core.JdbcTemplate(711)]-Executing prepared SQL query
+[2021-12-20 16:05:46,924][DEBUG][YbZI][org.springframework.jdbc.core.JdbcTemplate(643)]-Executing prepared SQL statement [select /* sample */mo_no, weight from mo_hea where mo_no = ?]
+[2021-12-20 16:05:46,924][TRACE][YbZI][org.springframework.jdbc.core.StatementCreatorUtils(221)]-Setting SQL statement parameter value: column index 1, parameter value [M000164], value class [java.lang.String], SQL type unknown
+[2021-12-20 16:05:46,929][INFO ][YbZI][com.dongkuk.oasis.model.activity.SqlScriptTask(31)]-Task [Activity_0591vg1](MO 조회) finish.(5ms)
+[2021-12-20 16:05:46,930][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultEndEvent(24)]-Task [Event_19hiwi1](Event_19hiwi1) start.
+[2021-12-20 16:05:46,930][INFO ][YbZI][com.dongkuk.oasis.model.event.DefaultEndEvent(31)]-Task [Event_19hiwi1](Event_19hiwi1) finish.(0ms)
+[2021-12-20 16:05:46,930][INFO ][YbZI][com.dongkuk.oasis.process.CoreProcessStarter(29)]-Process [Process_05xymvn](Process_05xymvn) finish.(20ms)
+[2021-12-20 16:05:46,935][INFO ][YbZI][com.dongkuk.oasis.transaction.SpringTransactionHandler(117)]-Transaction [txBiz] has been committed.
+[2021-12-20 16:05:46,935][INFO ][YbZI][com.dongkuk.oasis.service.SpringServiceStarter(37)]-Service [mo] finish.(39ms)
+[2021-12-20 16:05:52,996][TRACE][][org.hibernate.type.spi.TypeConfiguration$Scope(208)]-Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@667dd150] for TypeConfiguration
+[2021-12-20 16:05:52,996][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(345)]-Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@25fc4228] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@667dd150]
+[2021-12-20 16:05:52,997][INFO ][][com.zaxxer.hikari.HikariDataSource(350)]-HikariPool-2 - Shutdown initiated...
+[2021-12-20 16:05:53,032][INFO ][][com.zaxxer.hikari.HikariDataSource(352)]-HikariPool-2 - Shutdown completed.
+[2021-12-20 16:05:53,032][TRACE][][org.hibernate.type.spi.TypeConfiguration$Scope(208)]-Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@341ccfd1] for TypeConfiguration
+[2021-12-20 16:05:53,032][DEBUG][][org.hibernate.type.spi.TypeConfiguration$Scope(345)]-Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3d477dd8] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@341ccfd1]
+[2021-12-20 16:05:53,032][INFO ][][com.zaxxer.hikari.HikariDataSource(350)]-HikariPool-1 - Shutdown initiated...
+[2021-12-20 16:05:53,063][INFO ][][com.zaxxer.hikari.HikariDataSource(352)]-HikariPool-1 - Shutdown completed.

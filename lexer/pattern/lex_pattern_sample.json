@@ -1,0 +1,41 @@
+{
+    "tokens":[
+        {
+            "tokenType":"SERVICE_START",
+            "discard":false,
+            "state":"S",
+            "stringMatcher":{
+                "input":"Text",
+                "containText":["Service ",  " Start."]
+            },
+            "regexMatcher":{
+                "input":"Text",
+                "test":"Service \\[(.*)\\]",
+                "matchingKeys":["Service.ServiceName"]
+            },
+            "postProcessor":{
+                "ServiceName":"SQL.Param"                
+            }
+            
+        },
+        {
+            "tokenType":"SERVICE_END",
+            "discard":false,
+            "state":"F",
+            "stringMatcher":{
+                "input":"Text",
+                "containText":["Service ",  " finish"]
+            },
+            "regExMatcher":{
+                "input":"Text",
+                "test":"Service \\[(.*)\\] finish.*\\(([0-9]+)ms\\)",
+                "matchingKeys":["Service.ServiceName", "Service.RunTime"]
+            },
+            "postProcessor":{
+                "ServiceName":"SQL.Param"
+                
+            }
+        },
+        {"tokenType":"SQL","discard":false,"state":"","stringMatcher":{"input":"Text","containText":[]},"extraMatcher1":{"input":"NDC","containText":["org.hibernate.SQL"]},"regExMatcher":{"input":"Text","test":"(.*)","matchingKeys":["SQL"]}}
+    ]
+}

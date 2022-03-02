@@ -1,0 +1,45 @@
+{
+    "servers":[
+        {
+            "Server": "210.1.1.138",
+            "UserName": "tstwas",
+            "Password":        "tstwas!!",
+            "RemoteRoot":   "/APP/WAS/UBMWQ/LOG/log4j",
+            "RemoteDirs": [
+                "PDA"
+
+            ],
+            "RemoteDirs111": [
+                "테스트후에 위에 합칠것",
+                "C10",
+                "M17",
+                "M20",
+                "M26",
+                "M30",
+                "M42",
+                "M47",
+                "M60",
+                "M77",
+                "M80",
+                "M9021",
+                "M9041",
+                "PDA"
+            ],
+            "AnalogRoot": "C:/analogo",
+            "FilePattern":     ""
+        } ,
+        {
+            "Server": "210.1.1.136",
+            "UserName": "tstwas",
+            "Password":        "tstwas!!",
+            "RemoteDirRoot":   "/APP/WAS/UBMWQ/LOG/log4j",
+            "RemoteDirs": [
+                "C10"
+
+            ],
+            "LocalDir":        "C:/analogo",
+            "FilePattern":     ""
+        }
+    ]
+}
+

@@ -1,0 +1,14 @@
+{
+    "UBMWQ":{
+        "Server": "210.1.1.138",
+        "UserName": "tstwas",
+        "Password": "tstwas!!",
+        "RemoteRoot": "/APP/WAS/UBMWQ/LOG/log4j",
+        "RemoteDirs": [
+            "SND"
+        ],
+        "AnalogRoot": "C:/LogApp/LogSource2",
+        "FilePattern":     ""
+    } 
+}
+

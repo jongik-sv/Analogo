@@ -1,0 +1,204 @@
+
+[2021-12-10 18:16:44,718][INFO ][L454][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] start.
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_09fiov0
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0esc4cw
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : StartEvent_1
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0vwtv6v
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0qep0bz
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_1k6inig
+    [2021-12-10 18:16:44,755][DEBUG][L454][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Gateway_1xtcgie
+    [2021-12-10 18:16:44,755][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Creating new transaction with name [txBiz]: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED
+    [2021-12-10 18:16:44,755][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Opened new EntityManager [SessionImpl(1057517047<open>)] for JPA transaction
+    [2021-12-10 18:16:44,758][DEBUG][L454][org.springframework.jdbc.datasource.DataSourceUtils]-Changing isolation level of JDBC Connection [HikariProxyConnection@847886613 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 2
+    [2021-12-10 18:16:44,762][DEBUG][L454][org.hibernate.engine.transaction.internal.TransactionImpl]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+    [2021-12-10 18:16:44,762][DEBUG][L454][org.hibernate.engine.transaction.internal.TransactionImpl]-begin
+    [2021-12-10 18:16:44,764][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@33122c29]
+    [2021-12-10 18:16:44,764][INFO ][L454][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] started.
+
+        [2021-12-10 18:16:44,764][INFO ][L454][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) start.
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) start.
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) finish.(0ms)
+
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(0ms)
+
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_0esc4cw](MO등록_exception) start.
+            [2021-12-10 18:16:44,765][INFO ][L454][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [throwException]
+            [2021-12-10 18:16:44,766][DEBUG][L454][io.github.thecodinglog.methodinvoker.ParameterTypeMethodArgumentBindingStrategy]-Type binding of interface com.dongkuk.dmes.cr.biz.plan.mo.MoRepository
+            [2021-12-10 18:16:44,767][INFO ][L454][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_0esc4cw](MO등록_exception) finish with exceptions.(1ms)
+            
+        [2021-12-10 18:16:44,767][INFO ][L454][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) finish with exceptions.(2ms)
+    [2021-12-10 18:16:44,767][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Initiating transaction rollback
+    [2021-12-10 18:16:44,767][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Rolling back JPA transaction on EntityManager [SessionImpl(1057517047<open>)]
+    [2021-12-10 18:16:44,767][DEBUG][L454][org.hibernate.engine.transaction.internal.TransactionImpl]-rolling back
+    [2021-12-10 18:16:44,771][DEBUG][L454][org.springframework.jdbc.datasource.DataSourceUtils]-Resetting isolation level of JDBC Connection [HikariProxyConnection@847886613 wrapping com.mysql.jdbc.JDBC4Connection@42ed4589] to 4
+    [2021-12-10 18:16:44,772][DEBUG][L454][org.springframework.orm.jpa.JpaTransactionManager]-Closing JPA EntityManager [SessionImpl(1057517047<open>)] after transaction
+    [2021-12-10 18:16:44,773][INFO ][L454][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] has been rolled back.
+    [2021-12-10 18:16:44,773][ERROR][L454][com.dongkuk.oasis.service.StopWatchServiceStarter]-my exception
+    java.lang.RuntimeException: my exception
+        at com.dongkuk.dmes.cr.biz.plan.mo.Mo.throwException(Mo.java:23) ~[classes/:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at io.github.thecodinglog.methodinvoker.StrictMethodInvoker.invoke(StrictMethodInvoker.java:60) ~[method-invoker-0.2.0.jar:?]
+        at com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable.execute(PlainJavaServiceTaskExecutable.java:86) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.JavaServiceTaskExecutable.execute(JavaServiceTaskExecutable.java:46) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.CoreElementExecutor.execute(CoreElementExecutor.java:74) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.StopWatchElementExecutor.execute(StopWatchElementExecutor.java:36) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.CoreProcessStarter.start(CoreProcessStarter.java:99) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.AbstractStopWatchProcessStarter.start(AbstractStopWatchProcessStarter.java:32) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.StopWatchProcessStarter.start(StopWatchProcessStarter.java:26) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.CoreServiceStarter.lambda$start$3(CoreServiceStarter.java:94) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.transaction.SpringTransactionHandler.execute(SpringTransactionHandler.java:215) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.CoreServiceStarter.start(CoreServiceStarter.java:93) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.SpringServiceStarter.start(SpringServiceStarter.java:33) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.WatchServiceStarter.logAndServiceStart(WatchServiceStarter.java:34) [oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.StopWatchServiceStarter.start(StopWatchServiceStarter.java:29) [oasis-core-4.2.0.jar:?]
+        at com.dongkuk.dmes.cr.frm.inbound.ServiceController.service(ServiceController.java:67) [dmes-cr-frm-0.0.0.jar:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.13.jar:5.3.13]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.13.jar:5.3.13]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [servlet-api.jar:?]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.13.jar:5.3.13]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:?]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.37]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:8.5.37]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.37]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:8.5.37]
+        at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.37]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [catalina.jar:8.5.37]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-coyote.jar:8.5.37]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.37]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-coyote.jar:8.5.37]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-coyote.jar:8.5.37]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.37]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.37]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+[2021-12-10 18:16:44,798][INFO ][L454][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] finish with exceptions.(79ms)
+[2021-12-10 18:16:44,807][DEBUG][L454][org.springframework.web.servlet.DispatcherServlet]-Failed to complete request: java.lang.RuntimeException: my exception
+
+
+
+
+[2021-12-13 11:49:20,578][INFO ][KFH7][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] start.
+    [2021-12-13 11:49:20,832][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_09fiov0
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0esc4cw
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : StartEvent_1
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0vwtv6v
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_0qep0bz
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Activity_1k6inig
+    [2021-12-13 11:49:20,846][DEBUG][KFH7][com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder]-Check element flows : Gateway_1xtcgie
+    [2021-12-13 11:49:20,928][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Creating new transaction with name [txBiz]: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED
+    [2021-12-13 11:49:20,928][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Opened new EntityManager [SessionImpl(1529475395<open>)] for JPA transaction
+    [2021-12-13 11:49:20,940][DEBUG][KFH7][org.springframework.jdbc.datasource.DataSourceUtils]-Changing isolation level of JDBC Connection [HikariProxyConnection@965137068 wrapping com.mysql.jdbc.JDBC4Connection@9beb9a2] to 2
+    [2021-12-13 11:49:20,947][DEBUG][KFH7][org.hibernate.engine.transaction.internal.TransactionImpl]-On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+    [2021-12-13 11:49:20,947][DEBUG][KFH7][org.hibernate.engine.transaction.internal.TransactionImpl]-begin
+    [2021-12-13 11:49:20,950][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3b21c6c5]
+    [2021-12-13 11:49:20,950][INFO ][KFH7][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] started.
+
+    [2021-12-13 11:49:20,956][INFO ][KFH7][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) start.
+        [2021-12-13 11:49:20,969][INFO ][KFH7][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) start.
+        [2021-12-13 11:49:20,984][INFO ][KFH7][com.dongkuk.oasis.model.event.DefaultStartEvent]-Task [StartEvent_1](StartEvent_1) finish.(14ms)
+
+        [2021-12-13 11:49:20,984][INFO ][KFH7][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) start.
+        [2021-12-13 11:49:20,995][INFO ][KFH7][com.dongkuk.oasis.model.gateway.DefaultExclusiveGateway]-Task [Gateway_1xtcgie](Gateway_1xtcgie) finish.(9ms)
+
+        [2021-12-13 11:49:21,000][INFO ][KFH7][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_0esc4cw](MO등록_exception) start.
+        [2021-12-13 11:49:21,067][INFO ][KFH7][com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable]-Invoking class : [com.dongkuk.dmes.cr.biz.plan.mo.Mo], method : [throwException]
+        [2021-12-13 11:49:21,098][DEBUG][KFH7][io.github.thecodinglog.methodinvoker.ParameterTypeMethodArgumentBindingStrategy]-Type binding of interface com.dongkuk.dmes.cr.biz.plan.mo.MoRepository
+        [2021-12-13 11:49:21,112][INFO ][KFH7][com.dongkuk.oasis.model.activity.JavaServiceTask]-Task [Activity_0esc4cw](MO등록_exception) finish with exceptions.(111ms)
+        
+    [2021-12-13 11:49:21,112][INFO ][KFH7][com.dongkuk.oasis.process.CoreProcessStarter]-Process [Process_05xymvn](Process_05xymvn) finish with exceptions.(155ms)
+    [2021-12-13 11:49:21,112][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Initiating transaction rollback
+    [2021-12-13 11:49:21,112][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Rolling back JPA transaction on EntityManager [SessionImpl(1529475395<open>)]
+    [2021-12-13 11:49:21,113][DEBUG][KFH7][org.hibernate.engine.transaction.internal.TransactionImpl]-rolling back
+    [2021-12-13 11:49:21,118][DEBUG][KFH7][org.springframework.jdbc.datasource.DataSourceUtils]-Resetting isolation level of JDBC Connection [HikariProxyConnection@965137068 wrapping com.mysql.jdbc.JDBC4Connection@9beb9a2] to 4
+    [2021-12-13 11:49:21,121][DEBUG][KFH7][org.springframework.orm.jpa.JpaTransactionManager]-Closing JPA EntityManager [SessionImpl(1529475395<open>)] after transaction
+    [2021-12-13 11:49:21,121][INFO ][KFH7][com.dongkuk.oasis.transaction.SpringTransactionHandler]-Transaction [txBiz] has been rolled back.
+    [2021-12-13 11:49:21,124][ERROR][KFH7][com.dongkuk.oasis.service.StopWatchServiceStarter]-my exception
+    java.lang.RuntimeException: my exception
+        at com.dongkuk.dmes.cr.biz.plan.mo.Mo.throwException(Mo.java:23) ~[classes/:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at io.github.thecodinglog.methodinvoker.StrictMethodInvoker.invoke(StrictMethodInvoker.java:60) ~[method-invoker-0.2.0.jar:?]
+        at com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable.execute(PlainJavaServiceTaskExecutable.java:86) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.JavaServiceTaskExecutable.execute(JavaServiceTaskExecutable.java:46) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.CoreElementExecutor.execute(CoreElementExecutor.java:74) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.executors.StopWatchElementExecutor.execute(StopWatchElementExecutor.java:36) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.CoreProcessStarter.start(CoreProcessStarter.java:99) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.AbstractStopWatchProcessStarter.start(AbstractStopWatchProcessStarter.java:32) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.process.StopWatchProcessStarter.start(StopWatchProcessStarter.java:26) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.CoreServiceStarter.lambda$start$3(CoreServiceStarter.java:94) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.transaction.SpringTransactionHandler.execute(SpringTransactionHandler.java:215) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.CoreServiceStarter.start(CoreServiceStarter.java:93) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.SpringServiceStarter.start(SpringServiceStarter.java:33) ~[oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.WatchServiceStarter.logAndServiceStart(WatchServiceStarter.java:34) [oasis-core-4.2.0.jar:?]
+        at com.dongkuk.oasis.service.StopWatchServiceStarter.start(StopWatchServiceStarter.java:29) [oasis-core-4.2.0.jar:?]
+        at com.dongkuk.dmes.cr.frm.inbound.ServiceController.service(ServiceController.java:67) [dmes-cr-frm-0.0.0.jar:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.13.jar:5.3.13]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.13.jar:5.3.13]
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.13.jar:5.3.13]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [servlet-api.jar:?]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.13.jar:5.3.13]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:?]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.37]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.37]
+        at com.dongkuk.dmes.cr.frm.filters.TraceIdLoggingFilter.doFilter(TraceIdLoggingFilter.java:24) [dmes-cr-frm-0.0.0.jar:?]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:8.5.37]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.37]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:8.5.37]
+        at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650) [catalina.jar:8.5.37]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.37]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [catalina.jar:8.5.37]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-coyote.jar:8.5.37]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.37]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-coyote.jar:8.5.37]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-coyote.jar:8.5.37]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.37]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.37]
+        at java.lang.Thread.run(Thread.java:834) [?:?]
+[2021-12-13 11:49:21,148][INFO ][KFH7][com.dongkuk.oasis.service.SpringServiceStarter]-Service [mo] finish with exceptions.(569ms)
+[2021-12-13 11:49:21,162][DEBUG][KFH7][org.springframework.web.servlet.DispatcherServlet]-Failed to complete request: java.lang.RuntimeException: my exception

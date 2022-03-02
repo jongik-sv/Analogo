@@ -1,0 +1,7 @@
+
+[2021-12-13 11:49:41,368][INFO ][Vzdf][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) start.
+    [2021-12-13 11:49:41,444][DEBUG][Vzdf][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL query
+    [2021-12-13 11:49:41,446][DEBUG][Vzdf][org.springframework.jdbc.core.JdbcTemplate]-Executing prepared SQL statement [select mo_no, name from mo_hea where mo_no = ?]
+    [2021-12-13 11:49:41,449][TRACE][Vzdf][org.springframework.jdbc.core.StatementCreatorUtils]-Setting SQL statement parameter value: column index 1, parameter value [M000024], value class [java.lang.String], SQL type unknown
+    [2021-12-13 11:49:41,467][DEBUG][Vzdf][com.dongkuk.oasis.executors.SqlScriptTaskExecutable]-1 row(s) selected.
+[2021-12-13 11:49:41,468][INFO ][Vzdf][com.dongkuk.oasis.model.activity.SqlScriptTask]-Task [Activity_0vwtv6v](MO 조회) finish.(99ms)
